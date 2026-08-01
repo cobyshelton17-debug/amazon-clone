@@ -1,0 +1,13 @@
+.deals-header {
+  margin: 16px 0;
+}
+
+.deals-header h1 {
+  margin: 0 0 4px;
+}
+
+.deals-count {
+  margin: 0;
+  font-size: 14px;
+  color: #565959;
+}

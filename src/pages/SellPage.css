@@ -1,0 +1,27 @@
+.sell-panel {
+  background: #fff;
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 16px;
+  max-width: 640px;
+}
+
+.sell-panel h1 {
+  margin: 0 0 16px;
+}
+
+.sell-panel p {
+  margin: 0 0 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.sell-panel .sell-hint {
+  color: #565959;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.sell-actions .cart-empty-link {
+  display: inline-block;
+}

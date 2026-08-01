@@ -1,0 +1,145 @@
+.product-card {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.15s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 100%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-body {
+  padding: 12px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #0f1111;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product-title:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.product-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars {
+  display: inline-flex;
+  gap: 1px;
+  color: #ffa41c;
+}
+
+.stars-shape {
+  width: 14px;
+  height: 14px;
+}
+
+.product-reviews {
+  font-size: 13px;
+  color: #007185;
+}
+
+.product-reviews:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.product-price {
+  font-size: 21px;
+  color: #0f1111;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.price-symbol {
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.price-fraction {
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.price-original {
+  font-size: 12px;
+  color: #565959;
+  text-decoration: line-through;
+}
+
+.product-prime b {
+  color: #fff;
+  background: #232f3e;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 3px;
+  text-transform: lowercase;
+}
+
+.product-prime b::after {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  vertical-align: -1px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath fill='%2328c8a0' d='M6 1 7.2 3.4l2.8.3-2 2 .5 2.8L6 7.4 3.5 8.5l.5-2.8-2-2 2.8-.3z'/%3E%3C/svg%3E")
+    no-repeat center;
+}
+
+.add-to-cart {
+  margin-top: auto;
+  padding: 7px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  background: #ffd814;
+  color: #0f1111;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.add-to-cart:hover {
+  background: #f7ca00;
+}
+
+.add-to-cart:active {
+  background: #eebe00;
+}

@@ -1,0 +1,173 @@
+.cs-hero {
+  background: linear-gradient(90deg, #232f3e, #37475a);
+  color: #fff;
+  border-radius: 4px;
+  padding: 24px;
+  margin: 16px 0;
+}
+
+.cs-hero h1 {
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.cs-hero p {
+  margin: 0;
+  font-size: 14px;
+  color: #d5d9d9;
+}
+
+.cs-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.cs-help,
+.cs-form {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px 24px;
+}
+
+.cs-help h2,
+.cs-form h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cs-topics {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-topics li {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.cs-topic-link {
+  display: block;
+  padding: 10px 4px;
+  text-decoration: none;
+  color: #007185;
+  font-size: 14px;
+}
+
+.cs-topic-link:hover {
+  color: #c7511f;
+  text-decoration: underline;
+}
+
+.cs-hours {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.cs-hours h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cs-hours p {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #0f1111;
+}
+
+.cs-field {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.cs-field span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f1111;
+}
+
+.cs-field input,
+.cs-field select,
+.cs-field textarea {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0f1111;
+  background: #fff;
+  border: 1px solid #888c8c;
+  border-radius: 4px;
+  outline: none;
+}
+
+.cs-field input:focus,
+.cs-field select:focus,
+.cs-field textarea:focus {
+  border-color: #f90;
+  box-shadow: 0 0 0 3px rgba(255, 153, 0, 0.3);
+}
+
+.cs-field textarea {
+  resize: vertical;
+}
+
+.cs-send-btn {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-family: inherit;
+  font-weight: 700;
+  color: #0f1111;
+  background: #ffd814;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.cs-send-btn:hover {
+  background: #f7ca00;
+}
+
+.cs-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.cs-modal {
+  background: #fff;
+  border-radius: 6px;
+  padding: 24px;
+  max-width: 420px;
+  width: calc(100% - 32px);
+  text-align: center;
+}
+
+.cs-modal h2 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.cs-modal p {
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #0f1111;
+}
+
+@media (max-width: 800px) {
+  .cs-layout {
+    grid-template-columns: 1fr;
+  }
+}

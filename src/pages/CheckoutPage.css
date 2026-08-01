@@ -1,0 +1,152 @@
+.checkout-title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.checkout-confirm {
+  background: #fff;
+  border-radius: 4px;
+  padding: 40px;
+  text-align: center;
+}
+
+.checkout-confirm h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.checkout-confirm p {
+  margin: 0 0 8px;
+  color: #565959;
+}
+
+.checkout-confirm .confirm-eta {
+  margin-bottom: 20px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+  align-items: start;
+}
+
+.checkout-left {
+  background: #fff;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.checkout-section {
+  padding: 16px 0;
+}
+
+.checkout-section + .checkout-section {
+  border-top: 1px solid #e7e7e7;
+}
+
+.checkout-section h2 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f1111;
+}
+
+.checkout-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-fields input {
+  padding: 8px 10px;
+  border: 1px solid #888c8c;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background: #fff;
+  color: #0f1111;
+}
+
+.checkout-fields input:focus {
+  outline: none;
+  border-color: #007185;
+  box-shadow: 0 0 0 3px #c8f3fa;
+}
+
+.checkout-row {
+  display: flex;
+  gap: 10px;
+}
+
+.checkout-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.checkout-review-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.checkout-review-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.checkout-review-title {
+  flex: 1;
+  font-size: 14px;
+}
+
+.checkout-review-price {
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.checkout-summary {
+  background: #fff;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.checkout-price-lines p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.checkout-price-lines .checkout-total {
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 1px solid #e7e7e7;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.checkout-place {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.checkout-disclaimer {
+  font-size: 12px;
+  color: #565959;
+  margin: 12px 0 0;
+  line-height: 1.4;
+}
+
+@media (max-width: 800px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
